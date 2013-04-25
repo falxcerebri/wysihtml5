@@ -247,9 +247,7 @@ wysihtml5.dom.parse = (function() {
 	
 	if (allowAttributes) {
         for (attributeName in allowAttributes) {
-        	alert(attributeName)
           newAttributeValue = _getAttribute(oldNode, attributeName);
-        	
           if(allowAttributes[attributeName]!=null  && newAttributeValue){
 	          attributes[attributeName] = newAttributeValue;
           }
